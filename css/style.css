@@ -1,0 +1,94 @@
+h1{
+
+    color: brown;
+    font-size: 50px;
+}
+
+h2{
+    color: rgb(21, 21, 132);
+    font-size: 25px;
+}
+
+nav a{
+
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+footer{
+
+    color: blueviolet;
+    background-color: rgb(181, 21, 143);
+}
+
+.artist-list{
+
+    border: 10px solid green;
+    border-radius: 10px;
+    background-color: aquamarine;
+
+}
+
+.thumbnail{
+
+    border: 10px solid green;
+    border-radius: 10px;
+
+}
+
+#picasso h2{
+    color: black;
+}
+#leonardo h2{
+    color: blue;
+}
+
+#vangogh h2{
+    color: red;
+}
+
+#Welcome{
+
+    font-size: 30px;
+}
+
+main section p{
+
+   font-size: 20px;
+}
+
+section article h2{
+
+    color: palevioletred;
+}
+
+section ul strong{
+
+    color: blueviolet;
+}
+
+/* The "pablo picasso" <h2> in artists.html has class="artist-list" 
+h2{color:red;}
+or 
+.artist-list{color:black;}
+black win because class is more specific
+  */
+
+  .artist-list{color:black;}
+
+  /* The "pablo picasso" <h2> in artists.html has class="artist-list" 
+.artist-list h2{color:blue;}
+or 
+.artist-list{color:black;}
+blue win because class is more specific
+  */
+  .artist-list h2{color:blue;}
+
+    /* Specificity scores (id, class, type):
+
+    .artist-list h2{color:blue;} = (0,1,1)=one class+one type
+    .artist-list{color:black;}=(0,1,0)=one class
+    h2{color:red;}=(0,0,1)=one type
+
+  */
+
